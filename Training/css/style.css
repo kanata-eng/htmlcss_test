@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .btn {
+    padding: 0 16px;
+}
+
+.header-right .signup {
+    display: inline-block;
+    color: #FFF;
+    background-color: rgb(252, 84, 118);
+    border-radius: 5px;
+    line-height: 40px;
+}
