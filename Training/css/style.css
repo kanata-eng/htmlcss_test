@@ -105,3 +105,83 @@ a {
 .image-chousei {
     padding-bottom: 96px;
 }
+
+.success-story {
+    background-color: #2b546a;
+    padding: 96px 4.16%;
+    /* text-align: center; */
+}
+
+.success-heading {
+    margin-top: 0;
+}
+
+.success-heading .small-title {
+    color: #fff;
+}
+
+.success-heading .small-text {
+    color: #fff;
+}
+
+/* --- カードを束ねる親箱（Grid設定） --- */
+.success-story__main-list {
+    display: grid;
+    /* 「1fr」は「1フラクション（比率）」のこと。3回繰り返す＝3等分 */
+    grid-template-columns: repeat(3, 1fr); 
+    /* カード同士の隙間 */
+    gap: 32px; 
+    /* 全体の幅が広がりすぎないように制限 */
+    max-width: 1170px;
+    margin: 56px auto; /* 上に余白、左右中央寄せ */
+}
+
+/* --- カード自体の見た目 --- */
+.success-story-card__link {
+    background-color: #fff; /* 白背景 */
+    display: flex; /* 中身を縦に積むためにFlexを使う */
+    flex-direction: column; /* 縦並び */
+    align-items: center; /* 中身を中央揃え */
+    padding: 20px;
+    text-align: center; /* 文字を中央揃え */
+    color: #333; /* 文字色 */
+    border-radius: 10px; /* まん丸にする */ 
+}
+
+/* --- アイコン画像 --- */
+.success-story-card__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* まん丸にする */
+    object-fit: cover; /* 画像が歪まないようにトリミング */
+    margin-bottom: 20px;
+}
+
+/* --- 本文（サマリー） --- */
+.success-story-card__summary {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; /* 文量が変わっても下揃えにするためのテクニック */
+    color: #333;
+}
+
+/* --- ユーザー情報エリア --- */
+.success-story-card__info {
+    font-size: 12px;
+    color: #888;
+}
+
+/* もっと見るボタン */
+.success-story__button {
+    display: block;
+    width: fit-content;
+    margin: 0px auto;
+    color: rgb(43, 84, 106);
+    border-radius: 5px;
+    font-size: 0.875rem;
+    text-align: center;
+    background-color: rgb(240, 244, 249);
+    min-width: 200px;
+    line-height: 48px;
+}
